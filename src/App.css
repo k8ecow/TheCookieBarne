@@ -31,3 +31,10 @@
     transform: rotate(360deg);
   }
 }
+
+#instafeed {
+  height: auto;
+  width: 30%;
+  text-align: center;
+  border: 3px solid green;
+}
