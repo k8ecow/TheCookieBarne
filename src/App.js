@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div id="instafeed" >
+      <div className="Instafeed" >
         <InstaGrid account="the_cookie_barne" numberOfMediaElements={9}/>
       </div>
     </div>

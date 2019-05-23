@@ -32,9 +32,10 @@
   }
 }
 
-#instafeed {
+.Instafeed {
   height: auto;
-  width: 30%;
-  text-align: center;
-  border: 3px solid green;
+  max-width: 480px;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid black;
 }

@@ -1,21 +1,35 @@
 // @flow
 
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import withInstagramFeed from 'origen-react-instagram-feed';
 import { withStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import compose from 'recompose/compose';
- 
-const styles = () => ({
-  wrapper: {},
-  image: {
-    width: '100px',
-    height: '100px',
-    overflow: 'hidden'
+
+const styles = theme => ({
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    overflow: 'hidden',
+    backgroundColor: theme.palette.background.paper,
   },
+  wrapper: {
+  },
+  image: {
+    height: '160px',
+    width: '160px',
+  },
+  imageDiv: {    
+    height: '160px',
+    width: '160px',
+    overflow: 'hidden'
+    }
 });
- 
+
 export type Props = {
   media?: Array<{
     displayImage: string,
@@ -27,35 +41,35 @@ export type Props = {
   classes: { [$Keys<$Call<typeof styles>>]: string },
   status: 'completed' | 'loading' | 'failed',
 };
- 
+
 const InstaGrid = ({ classes, media, account, status}: Props) => {
   return (
-    <Grid container spacing={8} className={classes.wrapper}>
-      {media &&
+    <div className={classes.root}>
+      <GridList cellHeight={160} className={classes.wrapper} cols={3}>
+        {media && 
         status === 'completed' &&
-        media.map(({ displayImage, id, postLink, accessibilityCaption }) => (
-          <Grid item xs={12} sm={6} md={4} key={id || displayImage}>
-            <ButtonBase
-              href={postLink || `https://www.instagram.com/${account}/`}
-            >
-              <img
-                src={displayImage}
-                alt={accessibilityCaption || 'Instagram picture'}
-                className={classes.image}
+          media.map(({ displayImage, id, postLink, accessibilityCaption }) => (
+          <GridListTile key={id || displayImage} cols={1} className='imageDiv'>
+            <ButtonBase href={postLink || `https://www.instagram.com/${account}/`} >
+            <img 
+              src={displayImage} 
+              alt={accessibilityCaption || 'Instagram picture'} 
+              className={classes.image}
               />
             </ButtonBase>
-          </Grid>
+          </GridListTile>
         ))}
       {status === 'loading' && <p>loading...</p>}
       {status === 'failed' && <p>Check instagram here</p>}
-    </Grid>
+      </GridList>
+    </div>
   );
-};
+}
  
-InstaGrid.defaultProps = {
-  media: undefined,
+ InstaGrid.propTypes = {
+  classes: PropTypes.object.isRequired,
 };
- 
+
 export default compose(
   withInstagramFeed,
   withStyles(styles),
