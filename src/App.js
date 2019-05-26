@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import {
   Route,
   NavLink,
   HashRouter
 } from "react-router-dom";
+
+import logo from './logo.svg';
+import './App.css';
 import Home from './Home.js';
 import About from './About.js';
 import Contact from './Contact.js';
