@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <HashRouter>
-        <h1>The Cookie Barne</h1>
+        <h1 className="headerImg">The Cookie Barne</h1>
         <ul className="header">
           <li><NavLink to="/">Home</NavLink></li>
           <li><NavLink to="/about">About</NavLink></li>
