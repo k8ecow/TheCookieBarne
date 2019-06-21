@@ -16,13 +16,18 @@ function App() {
   return (
     <div className="App">
       <HashRouter>
-        <h1 className="headerImg">The Cookie Barne</h1>
-        <ul className="header">
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/gallery">Gallery</NavLink></li>
-          <li><NavLink to="/contact">Contact Us</NavLink></li>
-        </ul>
+        <h1 className="headerImg">
+          <div>The Cookie Barne</div>
+          <div className="wrapper">
+          <ul className="header">
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/gallery">Gallery</NavLink></li>
+            <li><NavLink to="/contact">Contact Us</NavLink></li>
+          </ul>
+          </div>
+        </h1>
+        
         <div className="content">
           <Route exact path="/" component={Home}/>
           <Route path="/about" component={About}/>
