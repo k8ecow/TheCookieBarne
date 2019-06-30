@@ -8,13 +8,47 @@
   pointer-events: none;
 }
 
-.header {
-  background-color: #282c34;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  position: relative;
-  display: inline-block;
-  
+.title-nav {
+  height: 30px;
+}
+.cookiebarne-logo {
+  height: 25px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  padding: 0px;
+}
+
+.title-header {
+  list-style-type: none;
+  margin: 0;
+  width: 200px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.homepage-three-boxes-wrap {
+  display: flex;
+  align-items: stretch; /* Default */
+  justify-content: space-between;
+  width: 100%;
+  background: #cacaca;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  display: block;
+  flex: 0 1 auto; /* Default */
+  list-style-type: none;
+  background: #fafafa;
+  width: 33%;
+}
+
+.navTile {
+  width: auto;
+  max-height: 180px;
 }
 
 .wrapper {
