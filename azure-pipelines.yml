@@ -20,9 +20,16 @@ steps:
     npm run build
   displayName: 'npm install and build'
   
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(buildOutputFolder)'
+    Contents: '**/*'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'''
+    CleanTargetFolder: true
+
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: 'build'
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/build.zip'
