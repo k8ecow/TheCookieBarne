@@ -22,7 +22,7 @@ steps:
   
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(buildOutputFolder)'
+    SourceFolder: 'build'
     Contents: '**/*'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'''
     CleanTargetFolder: true
