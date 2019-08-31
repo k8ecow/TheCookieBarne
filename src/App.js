@@ -1,55 +1,54 @@
-import React from 'react'
-import { Route, NavLink, HashRouter } from 'react-router-dom'
+import React from 'react';
+import logo from './assets/cookiebarne-logo.png';
+import './App.css';
+import Home from './Home.js';
+import About from './About.js';
+import Contact from './Contact.js';
+import Gallery from './Gallery.js';
+import Gallery2 from './Gallery2.js';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import ScrollableAnchor from 'react-scrollable-anchor';
 
-import logo from './assets/cookiebarne-logo.png'
-import pineapple from './assets/pineapple.jpg'
-import birthday from './assets/birthday.jpg'
-import chick from './assets/chick.jpg'
-import './App.css'
-import Home from './Home.js'
-import About from './About.js'
-import Contact from './Contact.js'
-import Gallery from './Gallery.js'
-
-function App () {
+function App() {
   return (
-    <div className='App'>
-      <HashRouter>
-        <div className='title-nav'>
-          <NavLink to='/'>
-            <img src={logo} alt={'test'} className='cookiebarne-logo' />
-          </NavLink>
-        </div>
-        <h1 className='headerImg'>
-          <div className='wrapper' />
-        </h1>
-        <ul className='homepage-three-boxes-wrap clearfix'>
-          <li className='box first'>
-            <NavLink to='/about'>
-              <img src={pineapple} alt={'About Us'} class='navTile' />
-            </NavLink>
-          </li>
-          <li className='box first'>
-            <NavLink to='/gallery'>
-              <img src={chick} alt={'Gallery'} class='navTile' />
-            </NavLink>
-          </li>
-          <li className='box first'>
-            <NavLink to='/contact'>
-              <img src={birthday} alt={'Place an Order'} class='navTile' />
-            </NavLink>
-          </li>
-        </ul>
-
-        <div className='content'>
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/gallery' component={Gallery} />
-          <Route path='/contact' component={Contact} />
-        </div>
-      </HashRouter>
+    <div className="App">
+      <Navbar sticky="top" bg="light" expand="lg">
+        <Navbar.Brand href="#home">
+          <img
+            src={logo}
+            className="cookiebarne-logo d-inline-block align-top"
+            height="30"
+            alt="The Cookie Barne Logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#about">About Us</Nav.Link>
+            <Nav.Link href="#gallery">Gallery</Nav.Link>
+            <Nav.Link href="#gallery2">Gallery Option 2</Nav.Link>
+            <Nav.Link href="#order">Place an Order</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      <h1 className="headerImg">
+        <div className="wrapper" />
+      </h1>
+      <ScrollableAnchor id={'about'}>
+        <About />
+      </ScrollableAnchor>
+      <ScrollableAnchor id={'gallery2'}>
+        <Gallery2 />
+      </ScrollableAnchor>
+      <ScrollableAnchor id={'gallery'}>
+        <Gallery />
+      </ScrollableAnchor>
+      <ScrollableAnchor id={'order'}>
+        <Contact />
+      </ScrollableAnchor>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

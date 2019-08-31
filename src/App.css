@@ -46,11 +46,6 @@
   width: 33%;
 }
 
-.navTile {
-  width: auto;
-  max-height: 180px;
-}
-
 .wrapper {
   margin: 0 2%;
   position: relative;
@@ -86,10 +81,10 @@ h3 {
 }
 
 .headerImg {
-  background: url("assets/barn.jpg");
+  background: url('assets/barn.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
-  background-position: center;
-  overflow:hidden;
+  height: 300px;
+  background-position: bottom;
+  overflow: hidden;
 }
