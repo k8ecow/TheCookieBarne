@@ -11,13 +11,21 @@ function App() {
   return (
     <div className="App">
       <Navbar collapseOnSelect sticky="top" bg="light" expand="lg">
-        <Navbar.Brand href="\">The Cookie Barne</Navbar.Brand>
+        <Navbar.Brand href="\" className="shadow-font">
+          The Cookie Barne
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#about">About Us</Nav.Link>
-            <Nav.Link href="#gallery">Gallery</Nav.Link>
-            <Nav.Link href="#order">Place an Order</Nav.Link>
+            <Nav.Link href="#about" className="nav-links">
+              About Us
+            </Nav.Link>
+            <Nav.Link href="#gallery" className="nav-links">
+              Gallery
+            </Nav.Link>
+            <Nav.Link href="#order" className="nav-links">
+              Place an Order
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

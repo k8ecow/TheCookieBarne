@@ -16,3 +16,19 @@
   background-position: bottom;
   overflow: hidden;
 }
+
+.shadow-font {
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+h2 {
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+.nav-links {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
