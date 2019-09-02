@@ -5,7 +5,6 @@ import Home from './Home.js';
 import About from './About.js';
 import Contact from './Contact.js';
 import Gallery from './Gallery.js';
-import Gallery2 from './Gallery2.js';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import ScrollableAnchor from 'react-scrollable-anchor';
@@ -27,7 +26,6 @@ function App() {
           <Nav className="mr-auto">
             <Nav.Link href="#about">About Us</Nav.Link>
             <Nav.Link href="#gallery">Gallery</Nav.Link>
-            <Nav.Link href="#gallery2">Gallery Option 2</Nav.Link>
             <Nav.Link href="#order">Place an Order</Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -37,9 +35,6 @@ function App() {
       </h1>
       <ScrollableAnchor id={'about'}>
         <About />
-      </ScrollableAnchor>
-      <ScrollableAnchor id={'gallery2'}>
-        <Gallery2 />
       </ScrollableAnchor>
       <ScrollableAnchor id={'gallery'}>
         <Gallery />
