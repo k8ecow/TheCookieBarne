@@ -1,28 +1,19 @@
 import React from 'react';
-import logo from './assets/cookiebarne-logo.png';
 import './App.css';
-import Home from './Home.js';
 import About from './About.js';
-import Contact from './Contact.js';
 import Gallery from './Gallery.js';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import PlaceOrder from './PlaceOrder.js';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 function App() {
   return (
     <div className="App">
-      <Navbar sticky="top" bg="light" expand="lg">
-        <Navbar.Brand href="#home">
-          <img
-            src={logo}
-            className="cookiebarne-logo d-inline-block align-top"
-            height="30"
-            alt="The Cookie Barne Logo"
-          />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+      <Navbar collapseOnSelect sticky="top" bg="light" expand="lg">
+        <Navbar.Brand href="\">The Cookie Barne</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="#about">About Us</Nav.Link>
             <Nav.Link href="#gallery">Gallery</Nav.Link>
@@ -33,14 +24,20 @@ function App() {
       <h1 className="headerImg">
         <div className="wrapper" />
       </h1>
+      <br />
+      <br />
       <ScrollableAnchor id={'about'}>
         <About />
       </ScrollableAnchor>
+      <br />
+      <br />
       <ScrollableAnchor id={'gallery'}>
         <Gallery />
       </ScrollableAnchor>
+      <br />
+      <br />
       <ScrollableAnchor id={'order'}>
-        <Contact />
+        <PlaceOrder />
       </ScrollableAnchor>
     </div>
   );
