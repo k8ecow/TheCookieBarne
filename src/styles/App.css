@@ -9,7 +9,7 @@
 }
 
 .headerImg {
-  background: url('assets/barn.jpg');
+  background: url('../assets/barn.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;

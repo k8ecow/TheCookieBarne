@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
-import About from './About.js';
-import Gallery from './Gallery.js';
+import './styles/App.css';
+import About from './components/About.js';
+import Gallery from './components/Gallery.js';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import PlaceOrder from './PlaceOrder.js';
+import PlaceOrder from './components/PlaceOrder.js';
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 function App() {
