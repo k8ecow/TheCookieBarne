@@ -11,6 +11,8 @@
     "jquery": "^3.4.1",
     "lint-staged": "^9.2.5",
     "minimist": "^1.2.5",
+    "material-ui": "^0.20.2",
+
     "origen-react-instagram-feed": "0.0.3",
     "prettier": "^1.18.2",
     "react": "^16.8.6",
