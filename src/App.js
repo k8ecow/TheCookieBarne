@@ -6,6 +6,8 @@ import Gallery from './components/Gallery.js';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavItem from 'react-bootstrap/NavItem';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
 import Occasions from './components/Occasions.js';
 import PlaceOrder from './components/PlaceOrder.js';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -21,20 +23,37 @@ function App() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
-              <LinkContainer to="/" className="nav-links">
-                <NavItem>Home</NavItem>
-              </LinkContainer>
               <LinkContainer to="/about" className="nav-links">
-                <NavItem>About Us</NavItem>
+                <Button variant="light">About Us</Button>
               </LinkContainer>
               <LinkContainer to="/gallery" className="nav-links">
-                <NavItem>Gallery</NavItem>
+                <Button variant="light">Gallery</Button>
               </LinkContainer>
-              <LinkContainer to="/occasions" className="nav-links">
-                <NavItem>Occasions</NavItem>
-              </LinkContainer>
+              <NavDropdown
+                className="dropdown-nav-button"
+                title={<span className="dropdown-nav-text">Occasions</span>}
+              >
+                <LinkContainer
+                  to="/occasions/#wedding"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>Wedding</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer
+                  to="/occasions/#babyshower"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>Baby Shower</NavDropdown.Item>
+                </LinkContainer>
+                <LinkContainer
+                  to="/occasions/#christmas"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>Christmas</NavDropdown.Item>
+                </LinkContainer>
+              </NavDropdown>
               <LinkContainer to="/order" className="nav-links">
-                <NavItem>Place Order</NavItem>
+                <Button variant="light">Place Order</Button>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
@@ -46,7 +65,7 @@ function App() {
           <Route path="/" exact component={About} />
           <Route path="/about" exact component={About} />
           <Route path="/gallery" exact component={Gallery} />
-          <Route path="/occasions" exact component={Occasions} />
+          <Route path="/occasions" component={Occasions} />
           <Route path="/order" exact component={PlaceOrder} />
         </Switch>
       </Router>

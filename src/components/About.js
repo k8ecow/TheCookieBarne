@@ -7,8 +7,8 @@ class About extends Component {
       <div>
         <h2>About Us</h2>
         <p className="about">
-          The Cookie Barne can help you celebrate any special occassion! Our
-          custom-decorated sugar cookies are a perfect way to celebrate
+          The Cookie Barne can help you celebrate any special occassion! <br />
+          Our custom-decorated sugar cookies are a perfect way to celebrate
           holidays, birthdays, weddings, graduations, and more!
           <br />
           We are located in Cypress, Texas and serve the Houston area.

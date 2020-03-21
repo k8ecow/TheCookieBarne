@@ -33,3 +33,16 @@ h2 {
 p {
   font-family: 'Raleway', sans-serif;
 }
+
+.dropdown-nav-button {
+  padding: 6px 12px;
+}
+
+.dropdown-nav-text {
+  color: #212529;
+  font: 16px Raleway, sans-serif;
+}
+
+a.dropdown-toggle.nav-link {
+  padding: 0px 0px 0px 0px !important;
+}
