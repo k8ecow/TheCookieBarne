@@ -2,13 +2,14 @@ import React from 'react';
 import './styles/App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from './components/About.js';
-import Gallery from './components/Gallery.js';
+import Home from './components/Home.js';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavItem from 'react-bootstrap/NavItem';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-import Occasions from './components/Occasions.js';
+import Weddings from './components/Gallery/Weddings.js';
+import BabyAndKid from './components/Gallery/BabyAndKid.js';
+import Holidays from './components/Gallery/Holidays.js';
 import PlaceOrder from './components/PlaceOrder.js';
 import { LinkContainer } from 'react-router-bootstrap';
 
@@ -23,37 +24,37 @@ function App() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
-              <LinkContainer to="/about" className="nav-links">
-                <Button variant="light">About Us</Button>
-              </LinkContainer>
-              <LinkContainer to="/gallery" className="nav-links">
-                <Button variant="light">Gallery</Button>
+              <LinkContainer to="/home" className="nav-links">
+                <Button variant="light">Home</Button>
               </LinkContainer>
               <NavDropdown
                 className="dropdown-nav-button"
-                title={<span className="dropdown-nav-text">Occasions</span>}
+                title={<span className="dropdown-nav-text">Gallery</span>}
               >
                 <LinkContainer
-                  to="/occasions/#wedding"
+                  to="/gallery/weddings"
                   className="dropdown-nav-text"
                 >
-                  <NavDropdown.Item>Wedding</NavDropdown.Item>
+                  <NavDropdown.Item>Weddings</NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer
-                  to="/occasions/#babyshower"
+                  to="/gallery/babyandkid"
                   className="dropdown-nav-text"
                 >
-                  <NavDropdown.Item>Baby Shower</NavDropdown.Item>
+                  <NavDropdown.Item>Baby And Kid</NavDropdown.Item>
                 </LinkContainer>
                 <LinkContainer
-                  to="/occasions/#christmas"
+                  to="/gallery/holidays"
                   className="dropdown-nav-text"
                 >
-                  <NavDropdown.Item>Christmas</NavDropdown.Item>
+                  <NavDropdown.Item>Holidays</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
               <LinkContainer to="/order" className="nav-links">
                 <Button variant="light">Place Order</Button>
+              </LinkContainer>
+              <LinkContainer to="/about" className="nav-links">
+                <Button variant="light">About Us</Button>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
@@ -62,10 +63,12 @@ function App() {
           <div className="wrapper" />
         </h1>
         <Switch>
-          <Route path="/" exact component={About} />
+          <Route path="/" exact component={Home} />
+          <Route path="/home" exact component={Home} />
           <Route path="/about" exact component={About} />
-          <Route path="/gallery" exact component={Gallery} />
-          <Route path="/occasions" component={Occasions} />
+          <Route path="/gallery/weddings" component={Weddings} />
+          <Route path="/gallery/babyandkid" component={BabyAndKid} />
+          <Route path="/gallery/holidays" component={Holidays} />
           <Route path="/order" exact component={PlaceOrder} />
         </Switch>
       </Router>

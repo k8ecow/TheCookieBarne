@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import InstaCarousel from './InstaCarousel.js';
+import '../../styles/Occasions.css';
 
-class Gallery extends Component {
+class GalleryFooter extends Component {
   render() {
     return (
       <div>
-        <h2>Gallery</h2>
-        <div className="InstaCarousel">
-          <InstaCarousel account="the_cookie_barne" />
-        </div>
-        <br />
         <p>
           {' '}
           Check out our full gallery on{' '}
@@ -20,4 +15,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery;
+export default GalleryFooter;
