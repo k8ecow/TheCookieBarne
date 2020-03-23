@@ -7,11 +7,38 @@ class BabyAndKid extends Component {
     return (
       <div>
         <h2>Baby And Kid</h2>
-        <img
-          src="https://cookiebarne.blob.core.windows.net/images/baby.jpg"
-          alt={'Baby shower cookies'}
-          className="occasions-gallery"
-        />
+        <div class="m5">
+          <div class="row">
+            <div class="column">
+              <img
+                src="https://cookiebarne.blob.core.windows.net/images/baby.jpg"
+                alt={'Baby shower cookies'}
+                className="occasions-gallery"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="https://cookiebarne.blob.core.windows.net/images/baby2.jpg"
+                alt={'Baby shower cookies'}
+                className="occasions-gallery"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="https://cookiebarne.blob.core.windows.net/images/baby3.jpg"
+                alt={'Baby shower cookies'}
+                className="occasions-gallery"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="https://cookiebarne.blob.core.windows.net/images/babykid_cars.jpg"
+                alt={'Baby shower cookies'}
+                className="occasions-gallery"
+              />
+            </div>
+          </div>
+        </div>
         <GalleryFooter />
       </div>
     );

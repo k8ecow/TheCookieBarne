@@ -7,17 +7,43 @@ class Weddings extends Component {
     return (
       <div>
         <h2>Weddings</h2>
-        <img
-          src="https://cookiebarne.blob.core.windows.net/images/wedding_dresses.jpg"
-          alt={'Wedding dresses'}
-          className="occasions-gallery"
-        />
-        <br />
-        <img
-          src="https://cookiebarne.blob.core.windows.net/images/wedding_cakes.jpg"
-          alt={'Wedding cakes'}
-          className="occasions-gallery"
-        />
+        <div class="m5">
+          <div class="row">
+            <div class="column">
+              <img
+                src="https://cookiebarne.blob.core.windows.net/images/wedding_dresses.jpg"
+                alt={'Wedding dresses'}
+                className="occasions-gallery"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="https://cookiebarne.blob.core.windows.net/images/wedding_cakes.jpg"
+                alt={'Wedding cakes'}
+                className="occasions-gallery"
+              />
+              <img
+                src="https://cookiebarne.blob.core.windows.net/images/wedding_cakes2.jpg"
+                alt={'Mini Christmas cookies'}
+                className="occasions-gallery"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="https://cookiebarne.blob.core.windows.net/images/wedding_dresses2.jpg"
+                alt={'Wedding cakes'}
+                className="occasions-gallery"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="https://cookiebarne.blob.core.windows.net/images/wedding_dresses3.jpg"
+                alt={'Wedding cakes'}
+                className="occasions-gallery"
+              />
+            </div>
+          </div>
+        </div>
         <GalleryFooter />
       </div>
     );

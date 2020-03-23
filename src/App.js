@@ -7,9 +7,16 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-import Weddings from './components/Gallery/Weddings.js';
 import BabyAndKid from './components/Gallery/BabyAndKid.js';
-import Holidays from './components/Gallery/Holidays.js';
+import Birthday from './components/Gallery/Birthday.js';
+import Christmas from './components/Gallery/Christmas.js';
+import Corporate from './components/Gallery/Corporate.js';
+import ForFun from './components/Gallery/ForFun.js';
+import Halloween from './components/Gallery/Halloween.js';
+import School from './components/Gallery/School.js';
+import Sports from './components/Gallery/Sports.js';
+import Thanksgiving from './components/Gallery/Thanksgiving';
+import Weddings from './components/Gallery/Weddings.js';
 import PlaceOrder from './components/PlaceOrder.js';
 import { LinkContainer } from 'react-router-bootstrap';
 
@@ -32,22 +39,73 @@ function App() {
                 title={<span className="dropdown-nav-text">Gallery</span>}
               >
                 <LinkContainer
-                  to="/gallery/weddings"
-                  className="dropdown-nav-text"
-                >
-                  <NavDropdown.Item>Weddings</NavDropdown.Item>
-                </LinkContainer>
-                <LinkContainer
                   to="/gallery/babyandkid"
                   className="dropdown-nav-text"
                 >
                   <NavDropdown.Item>Baby And Kid</NavDropdown.Item>
                 </LinkContainer>
+                {/*
                 <LinkContainer
-                  to="/gallery/holidays"
+                  to="/gallery/birthday"
                   className="dropdown-nav-text"
                 >
-                  <NavDropdown.Item>Holidays</NavDropdown.Item>
+                  <NavDropdown.Item>Birthday</NavDropdown.Item>
+                </LinkContainer> */}
+
+                <LinkContainer
+                  to="/gallery/christmas"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>Christmas</NavDropdown.Item>
+                </LinkContainer>
+                {/*
+                <LinkContainer
+                  to="/gallery/corporate"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>Corporate</NavDropdown.Item>
+                </LinkContainer> */}
+                {/*
+                <LinkContainer
+                  to="/gallery/forfun"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>For Fun</NavDropdown.Item>
+                </LinkContainer> */}
+                {/*
+                <LinkContainer
+                  to="/gallery/halloween"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>Halloween</NavDropdown.Item>
+                </LinkContainer> */}
+                {/*
+                <LinkContainer
+                  to="/gallery/school"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>School</NavDropdown.Item>
+                </LinkContainer> */}
+                {/*
+                <LinkContainer
+                  to="/gallery/sports"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>Sports</NavDropdown.Item>
+                </LinkContainer> */}
+                {/*
+                <LinkContainer
+                  to="/gallery/thanksgiving"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>Thanksgiving</NavDropdown.Item>
+                </LinkContainer> */}
+
+                <LinkContainer
+                  to="/gallery/weddings"
+                  className="dropdown-nav-text"
+                >
+                  <NavDropdown.Item>Weddings</NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>
               <LinkContainer to="/order" className="nav-links">
@@ -66,9 +124,16 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/home" exact component={Home} />
           <Route path="/about" exact component={About} />
-          <Route path="/gallery/weddings" component={Weddings} />
           <Route path="/gallery/babyandkid" component={BabyAndKid} />
-          <Route path="/gallery/holidays" component={Holidays} />
+          {/*<Route path="/gallery/birthday" component={Birthday} /> */}
+          <Route path="/gallery/christmas" component={Christmas} />
+          {/*<Route path="/gallery/corporate" component={Corporate} /> */}
+          {/*<Route path="/gallery/forfun" component={ForFun} /> */}
+          {/*<Route path="/gallery/halloween" component={Halloween} /> */}
+          {/*<Route path="/gallery/school" component={School} /> */}
+          {/*<Route path="/gallery/sports" component={Sports} /> */}
+          {/*<Route path="/gallery/thanksgiving" component={Thanksgiving} /> */}
+          <Route path="/gallery/weddings" component={Weddings} />
           <Route path="/order" exact component={PlaceOrder} />
         </Switch>
       </Router>
