@@ -79,13 +79,13 @@ function App() {
                 >
                   <NavDropdown.Item>Halloween</NavDropdown.Item>
                 </LinkContainer> */}
-                {/*
+
                 <LinkContainer
                   to="/gallery/school"
                   className="dropdown-nav-text"
                 >
                   <NavDropdown.Item>School</NavDropdown.Item>
-                </LinkContainer> */}
+                </LinkContainer>
                 {/*
                 <LinkContainer
                   to="/gallery/sports"
@@ -130,7 +130,7 @@ function App() {
           {/*<Route path="/gallery/corporate" component={Corporate} /> */}
           {/*<Route path="/gallery/forfun" component={ForFun} /> */}
           {/*<Route path="/gallery/halloween" component={Halloween} /> */}
-          {/*<Route path="/gallery/school" component={School} /> */}
+          <Route path="/gallery/school" component={School} />
           {/*<Route path="/gallery/sports" component={Sports} /> */}
           {/*<Route path="/gallery/thanksgiving" component={Thanksgiving} /> */}
           <Route path="/gallery/weddings" component={Weddings} />
