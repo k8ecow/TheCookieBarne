@@ -5,55 +5,55 @@ import '../../styles/Occasions.css';
 class School extends Component {
   render() {
     return (
-      <div>
+      <div role="main">
         <h2>School</h2>
         <div class="m5">
           <div class="row">
             <div class="column">
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/school3.jpeg"
-                alt={'Baby shower cookies'}
+                alt={'School supplies cookies'}
                 className="occasions-gallery"
               />
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/school2.jpeg"
-                alt={'Baby shower cookies'}
+                alt={'School supplies cookies'}
                 className="occasions-gallery"
               />
             </div>
             <div class="column">
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/school.jpg"
-                alt={'Baby shower cookies'}
+                alt={'Music notes cookies'}
                 className="occasions-gallery"
               />
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/school_212.jpg"
-                alt={'Baby shower cookies'}
+                alt={'212 cookies'}
                 className="occasions-gallery"
               />
             </div>
             <div class="column">
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/school_grad.jpg"
-                alt={'Baby shower cookies'}
+                alt={'Graduation cap cookies'}
                 className="occasions-gallery"
               />
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/school_miami.jpg"
-                alt={'Baby shower cookies'}
+                alt={'Graduate cookies'}
                 className="occasions-gallery"
               />
             </div>
             <div class="column">
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/school_physics.jpg"
-                alt={'Baby shower cookies'}
+                alt={'Science cookies'}
                 className="occasions-gallery"
               />
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/school_utd.jpg"
-                alt={'Baby shower cookies'}
+                alt={'UTD cookies'}
                 className="occasions-gallery"
               />
             </div>

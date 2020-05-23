@@ -5,7 +5,7 @@ import '../../styles/Occasions.css';
 class Christmas extends Component {
   render() {
     return (
-      <div>
+      <div role="main">
         <h2>Christmas</h2>
         <div class="m5">
           <div class="row">
@@ -24,41 +24,41 @@ class Christmas extends Component {
             <div class="column">
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/christmas_snowmen.jpg"
-                alt={'Mini Christmas cookies'}
+                alt={'Snowman cookies'}
                 className="occasions-gallery"
               />
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/christmas_believeBox.jpg"
-                alt={'Mini Christmas cookies'}
+                alt={'Mini Christmas cookies in tin'}
                 className="occasions-gallery"
               />
             </div>
             <div class="column">
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/christmas_trees.jpg"
-                alt={'Mini Christmas cookies'}
+                alt={'Christmas Tree cookies'}
                 className="occasions-gallery"
               />
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/christmas_gingerbread.jpg"
-                alt={'Mini Christmas cookies'}
+                alt={'Gingerbread Man Cookies'}
                 className="occasions-gallery"
               />
             </div>
             <div class="column">
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/christmas_poinsettia.jpg"
-                alt={'Mini Christmas cookies'}
+                alt={'Poinsettia cookies'}
                 className="occasions-gallery"
               />
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/christmas_snowflakes.jpg"
-                alt={'Mini Christmas cookies'}
+                alt={'Snowflake cookies'}
                 className="occasions-gallery"
               />
               <img
                 src="https://cookiebarne.blob.core.windows.net/images/christmas_snowflakes2.jpg"
-                alt={'Mini Christmas cookies'}
+                alt={'Snowflake cookies'}
                 className="occasions-gallery"
               />
             </div>

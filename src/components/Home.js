@@ -4,7 +4,7 @@ import InstaCarousel from './InstaCarousel.js';
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div role="main">
         <h2>Welcome!</h2>
         <p className="about">
           The Cookie Barne can help you celebrate any special occasion! <br />

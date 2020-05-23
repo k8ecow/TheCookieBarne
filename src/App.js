@@ -24,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <Router history={About}>
-        <Navbar bg="light" collapseOnSelect expand="lg">
+        <Navbar bg="light" collapseOnSelect expand="lg" role="navigation">
           <Navbar.Brand href="\" className="shadow-font">
             The Cookie Barne
           </Navbar.Brand>
@@ -44,13 +44,13 @@ function App() {
                 >
                   <NavDropdown.Item>Baby And Kid</NavDropdown.Item>
                 </LinkContainer>
-                {/*
+
                 <LinkContainer
                   to="/gallery/birthday"
                   className="dropdown-nav-text"
                 >
                   <NavDropdown.Item>Birthday</NavDropdown.Item>
-                </LinkContainer> */}
+                </LinkContainer>
 
                 <LinkContainer
                   to="/gallery/christmas"
@@ -86,13 +86,13 @@ function App() {
                 >
                   <NavDropdown.Item>School</NavDropdown.Item>
                 </LinkContainer>
-                {/*
+
                 <LinkContainer
                   to="/gallery/sports"
                   className="dropdown-nav-text"
                 >
                   <NavDropdown.Item>Sports</NavDropdown.Item>
-                </LinkContainer> */}
+                </LinkContainer>
                 {/*
                 <LinkContainer
                   to="/gallery/thanksgiving"
@@ -117,21 +117,21 @@ function App() {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <h1 className="headerImg">
+        <div className="headerImg" role="banner">
           <div className="wrapper" />
-        </h1>
+        </div>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/home" exact component={Home} />
           <Route path="/about" exact component={About} />
           <Route path="/gallery/babyandkid" component={BabyAndKid} />
-          {/*<Route path="/gallery/birthday" component={Birthday} /> */}
+          <Route path="/gallery/birthday" component={Birthday} />
           <Route path="/gallery/christmas" component={Christmas} />
           {/*<Route path="/gallery/corporate" component={Corporate} /> */}
           {/*<Route path="/gallery/forfun" component={ForFun} /> */}
           {/*<Route path="/gallery/halloween" component={Halloween} /> */}
           <Route path="/gallery/school" component={School} />
-          {/*<Route path="/gallery/sports" component={Sports} /> */}
+          <Route path="/gallery/sports" component={Sports} />
           {/*<Route path="/gallery/thanksgiving" component={Thanksgiving} /> */}
           <Route path="/gallery/weddings" component={Weddings} />
           <Route path="/order" exact component={PlaceOrder} />

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class PlaceOrder extends Component {
   render() {
     return (
-      <div>
+      <div role="main">
         <h2>Place an Order</h2>
         <p>
           Email:{' '}

@@ -4,7 +4,7 @@ import '../styles/About.css';
 class About extends Component {
   render() {
     return (
-      <div>
+      <div role="main">
         <h2>About Us</h2>
         <p className="about">
           The Cookie Barne can help you celebrate any special occassion! <br />
