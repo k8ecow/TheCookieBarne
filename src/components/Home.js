@@ -5,8 +5,10 @@ class Home extends Component {
   render() {
     return (
       <div role="main">
-        <h2>Welcome!</h2>
-        <p className="about">
+        <div class="title">
+          <h2>Welcome!</h2>
+        </div>
+        <p class="about">
           The Cookie Barne can help you celebrate any special occasion! <br />
           Our custom-decorated sugar cookies are a perfect way to celebrate
           holidays, birthdays, weddings, graduations, and more!
