@@ -138,10 +138,10 @@ function App() {
           <Route path="/order" exact component={PlaceOrder} />
           <Route path="/privacy" component={PrivacyPolicy} />
         </Switch>
+        <div class="footer">
+          <a href="\privacy">Privacy Policy</a>
+        </div>
       </Router>
-      <div class="footer">
-        <a href="/privacy">Privacy Policy</a>
-      </div>
     </div>
   );
 }
