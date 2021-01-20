@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/Privacy.css';
 
-class PrivacyPolicy extends Component {
+class Privacy extends Component {
   render() {
     return (
       <div role="main" class="privacy">
@@ -400,4 +400,4 @@ class PrivacyPolicy extends Component {
   }
 }
 
-export default PrivacyPolicy;
+export default Privacy;
