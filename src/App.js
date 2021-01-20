@@ -20,6 +20,7 @@ import Weddings from './components/Gallery/Weddings.js';
 import PlaceOrder from './components/PlaceOrder.js';
 import Privacy from './components/Privacy.js';
 import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -139,7 +140,7 @@ function App() {
           <Route path="/privacy" component={Privacy} />
         </Switch>
         <div class="footer">
-          <a href="\privacy">Privacy Policy</a>
+          <Link to="/privacy">Privacy Policy</Link>
         </div>
       </Router>
     </div>
