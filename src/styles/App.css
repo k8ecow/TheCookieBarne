@@ -46,3 +46,10 @@ p {
 a.dropdown-toggle.nav-link {
   padding: 0px 0px 0px 0px !important;
 }
+
+.footer {
+  position: fixed;
+  bottom: 5px;
+  text-align: center;
+  width: 100%;
+}

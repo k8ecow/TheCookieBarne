@@ -18,6 +18,7 @@ import Sports from './components/Gallery/Sports.js';
 // import Thanksgiving from './components/Gallery/Thanksgiving';
 import Weddings from './components/Gallery/Weddings.js';
 import PlaceOrder from './components/PlaceOrder.js';
+import PrivacyPolicy from './components/Privacy.js';
 import { LinkContainer } from 'react-router-bootstrap';
 
 function App() {
@@ -135,8 +136,12 @@ function App() {
           {/*<Route path="/gallery/thanksgiving" component={Thanksgiving} /> */}
           <Route path="/gallery/weddings" component={Weddings} />
           <Route path="/order" exact component={PlaceOrder} />
+          <Route path="/privacy" component={PrivacyPolicy} />
         </Switch>
       </Router>
+      <div class="footer">
+        <a href="/privacy">Privacy Policy</a>
+      </div>
     </div>
   );
 }
